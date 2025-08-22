@@ -1,0 +1,27 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vivsanto <vivsanto@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/08/17 18:10:16 by vivsanto          #+#    #+#             */
+/*   Updated: 2025/08/18 11:59:46 by vivsanto         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+void	*ft_memchr(const void *str, int c, size_t n)
+{
+	const unsigned char	*tmp;
+
+	tmp = str;
+	while (n-- > 0)
+	{
+		if (*tmp == (unsigned char)c)
+			return ((void *)tmp);
+		tmp++;
+	}
+	return (0);
+}
