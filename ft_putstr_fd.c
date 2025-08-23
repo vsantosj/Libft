@@ -6,7 +6,7 @@
 /*   By: vivsanto <vivsanto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/21 11:32:13 by vivsanto          #+#    #+#             */
-/*   Updated: 2025/08/21 12:12:17 by vivsanto         ###   ########.fr       */
+/*   Updated: 2025/08/22 15:57:57 by vivsanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,3 @@ void	ft_putstr_fd(char *s, int fd)
 		s++;
 	}
 }
-
-/*
-#include <unistd.h>
-
-int	main()
-{
-	char *s = "viviane";
-	ft_putstr_fd(s,1);
-	return (0);
-}*/
