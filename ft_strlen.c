@@ -6,7 +6,7 @@
 /*   By: vivsanto <vivsanto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 12:14:37 by vivsanto          #+#    #+#             */
-/*   Updated: 2025/08/10 15:06:04 by vivsanto         ###   ########.fr       */
+/*   Updated: 2025/09/03 13:14:50 by vivsanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 size_t	ft_strlen(const char *s)
 {
-	int	i;
+	const char	*start;
 
-	i = 0;
-	while (s[i] != '\0')
+	start = s;
+	while (*s)
 	{
-		i++;
+		s++;
 	}
-	return (i);
+	return (s - start);
 }
